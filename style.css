@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+.left,
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+}
+.left {
+  background-color: #4d2957; /* Primary color */
+}
+.right {
+  background-color: #edb372; /* Secondary color */
+}
+.logo-image {
+  width: 150px; /* Adjust the size of the logo as needed */
+  margin-bottom: 20px;
+}
+.logo {
+  color: #edb372;
+  font-size: 3rem; /* Large and responsive text */
+  font-weight: bold;
+}
+.tagline {
+  color: #edb372;
+  font-size: 1.5rem; /* Responsive tagline */
+  font-style: italic;
+  margin-top: 10px;
+}
+.coming-soon {
+  color: #4d2957;
+  font-size: 3.5rem; /* Large "Coming Soon" text */
+  font-weight: bold;
+}
+.address,
+.contact {
+  color: #4d2957;
+  font-size: 1.2rem; /* Make address and contact details readable */
+  margin-top: 10px;
+}
+.social-icons a {
+  color: #4d2957;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 2rem; /* Large social media icons */
+}
+.social-icons a:hover {
+  color: #dddddd; /* Hover effect */
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .logo {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+  .coming-soon {
+    font-size: 3rem; /* Adjust font size for smaller screens */
+  }
+}
